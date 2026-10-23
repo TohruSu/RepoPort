@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "repoport"
+version = "0.1.0"
+description = "A small, read-only checker for Git filename portability"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+
+[project.scripts]
+repoport = "repoport.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
